@@ -1,0 +1,22 @@
+{
+    "request": {
+        "method": "GET",
+        "urlPathPattern": "/api/v1/orders/.*"
+    },
+    "response": {
+        "status": 200,
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "jsonBody": {
+            "orderId": "{{request.path.[3]}}",
+            "customerId": "{{randomValue type='ALPHANUMERIC' length=5}}",
+            "total": "{{randomValue type='number' min=10 max=500}}",
+            "status": "PROCESSING",
+            "createdAt": "{{now}}"
+        },
+        "transformers": [
+            "response-template"
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "request": {
+        "method": "POST",
+        "url": "/api/v1/login/invalid"
+    },
+    "response": {
+        "status": 400,
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "jsonBody": {
+            "errorCode": "INVALID_CREDENTIALS",
+            "message": "Email or password is incorrect"
+        }
+    }
+}

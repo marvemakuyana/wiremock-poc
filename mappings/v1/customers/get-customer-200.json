@@ -10,12 +10,14 @@
         },
         "jsonBody": {
             "id": "{{request.path.[3]}}",
-            "name": "Jane Doe",
+            "name": "User-{{randomValue type='ALPHANUMERIC' length=5}}",
+            "email": "user{{randomValue type='ALPHANUMERIC' length=5}}@example.com",
             "status": "ACTIVE",
             "createdAt": "{{now}}"
         },
         "transformers": [
             "response-template"
-        ]
+        ],
+        "fixedDelayMilliseconds": 500
     }
 }

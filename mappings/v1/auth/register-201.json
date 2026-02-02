@@ -1,0 +1,21 @@
+{
+    "request": {
+        "method": "POST",
+        "url": "/api/v1/register"
+    },
+    "response": {
+        "status": 201,
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "jsonBody": {
+            "userId": "{{randomValue type='ALPHANUMERIC' length=5}}",
+            "email": "user{{randomValue type='ALPHANUMERIC' length=5}}@example.com",
+            "createdAt": "{{now}}",
+            "status": "ACTIVE"
+        },
+        "transformers": [
+            "response-template"
+        ]
+    }
+}

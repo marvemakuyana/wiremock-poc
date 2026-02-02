@@ -1,0 +1,16 @@
+{
+    "request": {
+        "method": "GET",
+        "urlPath": "/api/v1/orders/notfound"
+    },
+    "response": {
+        "status": 404,
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "jsonBody": {
+            "errorCode": "NOT_FOUND",
+            "message": "Order not found"
+        }
+    }
+}

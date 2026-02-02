@@ -1,0 +1,20 @@
+{
+    "request": {
+        "method": "POST",
+        "url": "/api/v1/login"
+    },
+    "response": {
+        "status": 200,
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "jsonBody": {
+            "token": "{{guid}}",
+            "userId": "{{randomValue type='ALPHANUMERIC' length=5}}",
+            "expiresAt": "{{now}}"
+        },
+        "transformers": [
+            "response-template"
+        ]
+    }
+}

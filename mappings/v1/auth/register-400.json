@@ -1,0 +1,16 @@
+{
+    "request": {
+        "method": "POST",
+        "url": "/api/v1/register/invalid"
+    },
+    "response": {
+        "status": 400,
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "jsonBody": {
+            "errorCode": "EMAIL_TAKEN",
+            "message": "Email already exists"
+        }
+    }
+}
