@@ -9,7 +9,7 @@
             "Content-Type": "application/json"
         },
         "jsonBody": {
-            "token": "{{guid}}",
+            "token": "{{randomValue type='UUID'}}",
             "userId": "{{randomValue type='ALPHANUMERIC' length=5}}",
             "expiresAt": "{{now}}"
         },

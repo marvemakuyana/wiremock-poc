@@ -1,0 +1,24 @@
+{
+    "request": {
+        "method": "GET",
+        "urlPathPattern": "/api/v1/YOUR_ENDPOINT(/.*)?"
+    },
+    "response": {
+        "status": 200,
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "jsonBody": {
+            "id": "{{randomValue type='ALPHANUMERIC' length=5}}",
+            "name": "User-{{randomValue type='string' length=5}}",
+            "email": "user{{randomValue type='number' min=1000 max=9999}}@example.com",
+            "status": "ACTIVE",
+            "createdAt": "{{now}}",
+            "token": "{{guid}}"
+        },
+        "transformers": [
+            "response-template"
+        ],
+        "fixedDelayMilliseconds": 500
+    }
+}

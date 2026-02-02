@@ -36,7 +36,6 @@ docker-compose up -d
 
 ### Dynamic Fields (Response Templating)
 
-- {{guid}} → random GUID
 - {{now}} → current timestamp (ISO 8601)
 - {{randomValue type='ALPHANUMERIC' length=5}} → random string
 - {{randomValue type='number' min=1000 max=9999}} → random number
