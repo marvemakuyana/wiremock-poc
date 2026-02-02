@@ -1,7 +1,8 @@
 # WireMock POC – Internal Mock API Service
 
-## Start WireMock
-```bash
+# Start WireMock
+
+````bash
 docker-compose up -d
 
 
@@ -75,11 +76,12 @@ docker-compose up -d
 ```bash
 ---
 
-This gives your team **everything they need to start using WireMock without asking you questions**.  
+This gives your team **everything they need to start using WireMock without asking you questions**.
 
 ---
 
-If you want, I can draft a **ready-to-copy `template.json` mapping file** and a **final README** that your team can drop in the repo and start adding endpoints in under 30 seconds.  
+If you want, I can draft a **ready-to-copy `template.json` mapping file** and a **final README** that your team can drop in the repo and start adding endpoints in under 30 seconds.
 
 Do you want me to do that next?
 ---
+````
