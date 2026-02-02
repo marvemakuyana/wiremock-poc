@@ -1,0 +1,21 @@
+{
+    "request": {
+        "method": "GET",
+        "urlPathPattern": "/api/v1/customers/.*"
+    },
+    "response": {
+        "status": 200,
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "jsonBody": {
+            "id": "{{request.path.[3]}}",
+            "name": "Jane Doe",
+            "status": "ACTIVE",
+            "createdAt": "{{now}}"
+        },
+        "transformers": [
+            "response-template"
+        ]
+    }
+}

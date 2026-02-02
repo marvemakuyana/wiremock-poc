@@ -1,0 +1,16 @@
+{
+    "request": {
+        "method": "GET",
+        "urlPath": "/api/v1/customers/invalid"
+    },
+    "response": {
+        "status": 400,
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "jsonBody": {
+            "errorCode": "INVALID_ID",
+            "message": "Customer ID is invalid"
+        }
+    }
+}
