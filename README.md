@@ -1,16 +1,5 @@
 # WireMock POC – Internal Mock API Service
 
-## Start WireMock
-
-```bash
-docker-compose up -d
-
-```
-
----
-
-## WireMock POC – Internal Mock API Service
-
 ### Purpose
 
 This project provides an internal mock API service for frontend, QA, and integration testing without relying on live backend APIs.
