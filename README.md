@@ -27,7 +27,7 @@ docker-compose up -d
 
 2. Update:
 
-- method: GET, POST, etc.
+- method: GET, POST, etc
 - urlPathPattern: /api/v1/YOUR_ENDPOINT
 - jsonBody: define response payload
 - status: HTTP status code
