@@ -10,7 +10,7 @@
         },
         "jsonBody": {
             "errorCode": "EMAIL_TAKEN",
-            "message": "Email already exists"
+            "message": "Email already exists!"
         }
     }
 }

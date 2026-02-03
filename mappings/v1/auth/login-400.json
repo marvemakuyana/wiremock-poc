@@ -10,7 +10,7 @@
         },
         "jsonBody": {
             "errorCode": "INVALID_CREDENTIALS",
-            "message": "Email or password is incorrect"
+            "message": "Email or password is incorrect!"
         }
     }
 }
