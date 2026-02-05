@@ -24,7 +24,6 @@ docker-compose up -d
 ### Adding a New Endpoint
 
 1. Copy the template JSON from mappings/template.json
-
 2. Update:
 
 - method: GET, POST, etc
