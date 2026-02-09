@@ -42,9 +42,7 @@ docker-compose up -d
 ### Testing
 
 - GET endpoints: open in browser or Postman
-
 - POST endpoints: send JSON payload in Postman
-
 - Example payload:
 
 ```bash
